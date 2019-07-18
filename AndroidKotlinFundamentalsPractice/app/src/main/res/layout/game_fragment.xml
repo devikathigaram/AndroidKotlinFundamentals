@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/gameimage"
+               android:layout_marginTop="60dp"
+    />
+    <Button
+            android:id="@+id/game_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    android:text="Game Won"
+    android:background="#83C010"
+            android:padding="10dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"
+    />
+    <Button
+            android:id="@+id/game_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Over"
+            android:background="#83C010"
+            android:padding="10dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"
+    />
+
+</LinearLayout>
+</layout>

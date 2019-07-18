@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/title_fragment">
+
+    <fragment
+        android:id="@+id/title_fragment"
+        android:name="com.devika.android.TitleFragment"
+        android:label="Title Fragment">
+        <action
+            android:id="@+id/action_title_to_game_fragment"
+            app:destination="@id/game_fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/game_fragment"
+        android:name="com.devika.android.GameFragment"
+        android:label="Game Fragment">
+        <action
+            android:id="@+id/action_game_to_game_won_fragment"
+            app:destination="@id/game_won_fragment" />
+        <action
+            android:id="@+id/action_game_to_game_over_fragment"
+            app:destination="@id/game_over_fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/game_won_fragment"
+        android:name="com.devika.android.GameWonFragment">
+        <action
+            android:id="@+id/action_won_to_game_over_fragment"
+            app:destination="@id/game_over_fragment" />
+        <argument android:name="abcd" app:argType="integer"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/game_over_fragment"
+        android:name="com.devika.android.GameOverFragment"
+        android:label="Game Over Fragment">
+        <action
+            android:id="@+id/action_game_Over_Fragment_to_game_Fragment"
+            app:destination="@id/game_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/about_Fragment"
+        android:name="com.devika.android.AboutFragment"
+        android:label="About_Fragment" />
+
+    <fragment
+        android:id="@+id/rules_Fragment"
+        android:name="com.devika.android.RuleFragment"
+        android:label="Rules_Fragment" />
+</navigation>
